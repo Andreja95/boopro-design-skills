@@ -1,0 +1,17 @@
+.step1 :not(label) {
+    text-align: center;
+}
+.step1 label {
+    font-weight: 500;
+}
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .additionally-desc {
+        display: none;
+    }
+}
