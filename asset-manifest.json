@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/boopro-design-skills/static/css/main.96afa737.chunk.css",
+    "main.js": "/boopro-design-skills/static/js/main.a00df830.chunk.js",
+    "main.js.map": "/boopro-design-skills/static/js/main.a00df830.chunk.js.map",
+    "runtime-main.js": "/boopro-design-skills/static/js/runtime-main.ae98fa70.js",
+    "runtime-main.js.map": "/boopro-design-skills/static/js/runtime-main.ae98fa70.js.map",
+    "static/js/2.290f5f33.chunk.js": "/boopro-design-skills/static/js/2.290f5f33.chunk.js",
+    "static/js/2.290f5f33.chunk.js.map": "/boopro-design-skills/static/js/2.290f5f33.chunk.js.map",
+    "static/js/3.3892ca58.chunk.js": "/boopro-design-skills/static/js/3.3892ca58.chunk.js",
+    "static/js/3.3892ca58.chunk.js.map": "/boopro-design-skills/static/js/3.3892ca58.chunk.js.map",
+    "index.html": "/boopro-design-skills/index.html",
+    "static/css/main.96afa737.chunk.css.map": "/boopro-design-skills/static/css/main.96afa737.chunk.css.map",
+    "static/js/2.290f5f33.chunk.js.LICENSE.txt": "/boopro-design-skills/static/js/2.290f5f33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae98fa70.js",
+    "static/js/2.290f5f33.chunk.js",
+    "static/css/main.96afa737.chunk.css",
+    "static/js/main.a00df830.chunk.js"
+  ]
+}
