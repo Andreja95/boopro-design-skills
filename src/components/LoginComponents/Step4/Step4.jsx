@@ -10,13 +10,15 @@ const step4 = ({activeComponent}) => {
             <div className='card-body card-body-step4 px-lg-5 pt-0'>
                 <div className='row d-flex justify-content-center'>
                     <div className='col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6'>
-                        <h4 className='mb-4 mt-4'>Account information</h4>
+                        <h4 className='mb-4 mt-4' style={{fontWeight: 700}}>
+                            Account information
+                        </h4>
                         <form
                             className='text-center'
                             style={{color: '#757575'}}
                             action='#!'>
                             <div className='row'>
-                                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 md-form'>
+                                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 md-form mb-3'>
                                     <label htmlFor='materialLoginFormEmail'>
                                         Name
                                     </label>
@@ -41,7 +43,7 @@ const step4 = ({activeComponent}) => {
                                 </div>
                             </div>
                             <div className='row mt-2'>
-                                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 md-form'>
+                                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 md-form mb-3'>
                                     <label
                                         htmlFor='materialLoginFormEmail'
                                         className='control-label'>
@@ -69,7 +71,9 @@ const step4 = ({activeComponent}) => {
                                 </div>
                             </div>
                             <div className='row mt-5 mb-4'>
-                                <h6>Choose a branch</h6>
+                                <h6 style={{color: 'black'}} className='pb-2'>
+                                    Choose a branch
+                                </h6>
                                 <div className='industry row'>
                                     <div className='industry-item'>
                                         <img
@@ -188,11 +192,11 @@ const step4 = ({activeComponent}) => {
                     </div>
                 </div>
             </div>
-            <div class='card-footer'>
+            <div className='card-footer'>
                 <div className='row d-flex justify-content-center'>
                     <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2'>
                         <button
-                            className='btn btn-outline-info btn-block my-4 waves-effect z-depth-0 stepBackDesktop'
+                            className='btn btn-light btn-block my-4 waves-effect z-depth-0 stepBackDesktop'
                             type='submit'>
                             Back
                         </button>

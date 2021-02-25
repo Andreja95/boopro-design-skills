@@ -14,4 +14,23 @@ input[type='text'] {
     .additionally-desc {
         display: none;
     }
+    .step1 {
+        margin: 0px;
+        padding: 20px;
+    }
+    /* .step1-container {
+        height: auto !important;
+    } */
+}
+@media only screen and (min-width: 600px) {
+    .step1 {
+        margin: 80px;
+    }
+    /* .additionally-desc-content {
+        margin: 20px;
+    } */
+    .step1-container {
+        height: 100vh;
+        padding: 80px;
+    }
 }

@@ -1,12 +1,13 @@
 import React from 'react';
+import './Step2.styles.css';
 
 const step2 = ({activeComponent}) => {
     return (
         <div className='container'>
-            <div
-                className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row align-items-center'
-                style={{height: '800px'}}>
-                <div className='col-12 d-flex align-items-center justify-content-center text-center'>
+            <div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row align-items-center step2'>
+                <div
+                    className='col-12 d-flex align-items-center justify-content-center text-center'
+                    style={{color: 'black'}}>
                     <div>
                         <div
                             className='logoo mb-3'
@@ -24,7 +25,8 @@ const step2 = ({activeComponent}) => {
                             />
                             <h4
                                 style={{
-                                    fontWeight: 600,
+                                    fontWeight: 700,
+                                    fontSize: '30px',
                                     margin: '0px',
                                     paddingLeft: '5px',
                                 }}>
@@ -32,7 +34,17 @@ const step2 = ({activeComponent}) => {
                                 bookybook
                             </h4>
                         </div>
-                        <h4 className='mt-b'> Check your e-mail!</h4>
+                        <h4
+                            className='mb-5 mt-4'
+                            style={{
+                                fontWeight: 700,
+                                fontSize: '30px',
+                                margin: '0px',
+                                paddingLeft: '5px',
+                            }}>
+                            {' '}
+                            Check your e-mail!
+                        </h4>
                         <img
                             src={
                                 process.env.PUBLIC_URL +
@@ -55,10 +67,10 @@ const step2 = ({activeComponent}) => {
                             Click the link in the email to activate your
                             account.
                         </p>
-
-                        <a href=''>
-                            You didn't arrive? Click here to resubmit.
-                        </a>
+                        <p>
+                            You didn't arrive? <a href=''>Click here </a>to
+                            resubmit.{' '}
+                        </p>
                     </div>
                 </div>
             </div>

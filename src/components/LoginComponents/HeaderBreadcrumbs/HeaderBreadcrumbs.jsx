@@ -5,12 +5,12 @@ import {mdiLessThan} from '@mdi/js';
 
 const HeaderBreadcrumbs = ({step}) => {
     return (
-        <div className='row'>
+        <div className='row' style={{height: '10vh'}}>
             <div
                 className='card-header info-color py-4 text-left'
                 style={{background: 'white'}}>
                 <div className='row card-header-info'>
-                    <div className='col-6 col-xl-2 d-flex align-items-center'>
+                    <div className='col-7 col-sm-6 col-xl-auto d-flex align-items-center px-4'>
                         {' '}
                         {step === 2 ? (
                             <div>
@@ -21,15 +21,18 @@ const HeaderBreadcrumbs = ({step}) => {
                                     }}>
                                     <Icon
                                         path={mdiLessThan}
-                                        title='Back'
                                         size={1}
                                         color='blue'
-                                        style={{paddingRight: '5px'}}
-                                    />
+                                        style={{
+                                            margin: '0',
+                                            paddingRight: '5px',
+                                        }}
+                                    />{' '}
                                     Back
                                 </button>
+
                                 <div className='logoo'>
-                                    <div className='row d-flex justify-content-center'>
+                                    <div className='row'>
                                         <div className='col'>
                                             {' '}
                                             <img
@@ -40,21 +43,24 @@ const HeaderBreadcrumbs = ({step}) => {
                                                 alt='mainLogo2'
                                             />
                                         </div>
-                                        <div className='col'>
-                                            <span
+                                        <div className='col mx-0 px-0'>
+                                            <p
                                                 className='h4'
                                                 style={{
                                                     margin: '0',
+                                                    fontSize: '25px',
+                                                    fontWeight: '700',
+                                                    color: 'black',
                                                 }}>
                                                 {' '}
                                                 bookybook
-                                            </span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         ) : (
-                            <div className='row d-flex justify-content-center'>
+                            <div className='row'>
                                 <div className='col'>
                                     <img
                                         src={
@@ -64,41 +70,40 @@ const HeaderBreadcrumbs = ({step}) => {
                                         alt='mainLogo2'
                                     />
                                 </div>
-                                <div className='col'>
-                                    <span
+                                <div className='col mx-0 px-0'>
+                                    <p
                                         className='h4'
                                         style={{
                                             margin: '0',
+                                            fontSize: '25px',
+                                            fontWeight: '700',
+                                            color: 'black',
                                         }}>
                                         {' '}
                                         bookybook
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         )}
                     </div>
-                    <div className='col-6 col-xl-10 d-flex align-items-center'>
-                        <span
-                            className='h4'
-                            style={{
-                                margin: '0',
-                                paddingLeft: '5px',
-                                paddingRight: '15px',
-                            }}>
+                    <div className='col-5 col-sm-6 col-xl-auto my-auto ovo px-3'>
+                        <span style={{color: '#1A73E8', fontWeight: '700'}}>
                             {' '}
-                            Step {step} / 3
-                        </span>
+                            Step {step}{' '}
+                        </span>{' '}
+                        <span style={{color: '#1A73E8'}}>/ 3</span>
                         <span
                             className={
-                                'dot ' + (step === 1 ? 'dotActive' : null)
+                                'dot ml-3 ' + (step >= 1 ? 'dotActive' : null)
+                            }
+                            style={{marginLeft: '20px'}}></span>
+                        <span
+                            className={
+                                'dot ' + (step >= 2 ? 'dotActive' : null)
                             }></span>
                         <span
                             className={
-                                'dot ' + (step === 2 ? 'dotActive' : null)
-                            }></span>
-                        <span
-                            className={
-                                'dot ' + (step === 3 ? 'dotActive' : null)
+                                'dot ' + (step >= 3 ? 'dotActive' : null)
                             }></span>
                     </div>
                 </div>

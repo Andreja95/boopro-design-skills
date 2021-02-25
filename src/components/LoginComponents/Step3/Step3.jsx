@@ -1,148 +1,189 @@
 import React from 'react';
 import './Step3.styles.css';
-import Icon from '@mdi/react';
-import {mdiHandLeft} from '@mdi/js';
 import HeaderBreadcrumbs from '../HeaderBreadcrumbs/HeaderBreadcrumbs';
+import HelpSectionComponent from '../HelpSectionComponent/HelpSectionComponent';
 
 const step3 = ({activeComponent}) => {
     return (
         <div className='card' style={{height: '100vh'}}>
             <HeaderBreadcrumbs step={1} />
-            <div className='row card-body card-body-step3 px-lg-5 px-0 pt-0 justify-content-center'>
-                <div
-                    className='row preview'
-                    style={{
-                        background: '#F5F8FA',
-                        height: '50px',
-                    }}>
-                    <div className='col-10 my-auto'>
-                        <span style={{fontWeight: 600, color: '#1A73E8'}}>
-                            Preview
-                        </span>
-                    </div>
-                    <div className='col-2 my-auto'>
-                        {' '}
-                        <img
-                            src={
-                                process.env.PUBLIC_URL +
-                                'images/step3/Vector.png'
-                            }
-                            alt='Vector'
-                            style={{float: 'right'}}
-                        />
-                    </div>
-                </div>
-                <div
-                    className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-5'
-                    style={{height: '100%', width: 'auto'}}>
-                    <h4 className='mt-4'>Customize the look</h4>
-                    <h5>Upload your logo</h5>
-                    <h5 className='lead'>Voluntary but warmly recommended</h5>
-
-                    <div class='image-upload mb-4 mt-3'>
-                        <label for='file-input'>
+            <div
+                className='row card-body card-body-step3 px-lg-5 mt-0 px-0 pt-5 justify-content-center'
+                style={{height: '80vh'}}>
+                <a
+                    href=''
+                    onClick={(event) =>
+                        activeComponent(event, 'helpSectionComponent2')
+                    }>
+                    <div
+                        className='row preview'
+                        style={{
+                            background: '#F5F8FA',
+                            height: '50px',
+                        }}>
+                        <div className='col-10 my-auto px-4'>
+                            <span
+                                style={{
+                                    fontWeight: 600,
+                                    color: '#1A73E8',
+                                }}>
+                                Preview
+                            </span>
+                        </div>
+                        <div className='col-2 my-auto px-4'>
+                            {' '}
                             <img
                                 src={
                                     process.env.PUBLIC_URL +
-                                    'images/step3/imageUploader.png'
+                                    'images/step3/Vector.png'
                                 }
-                                style={{pointerEvents: 'none'}}
+                                alt='Vector'
+                                style={{float: 'right'}}
                             />
-                        </label>
-                        <input
-                            id='file-input'
-                            type='file'
-                            style={{display: 'none'}}
-                        />
+                        </div>
                     </div>
-                    <h5>Choose a color</h5>
-                    <div class='custom-radios mt-3'>
-                        <div class='custom-radio'>
-                            <input
-                                type='radio'
-                                id='color-1'
-                                name='color'
-                                value='color-1'
-                            />
-                            <label for='color-1'>
-                                <span>
-                                    <img
-                                        src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
-                                        alt='Checked Icon'
-                                    />
-                                </span>
-                            </label>
-                        </div>
+                </a>
+                <div
+                    className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-5 mx-5 customize-look'
+                    style={{height: '100%'}}>
+                    <div>
+                        <h3
+                            className='my-4'
+                            style={{color: '#1a73e8', fontWeight: 700}}>
+                            Customize the look
+                        </h3>
+                        <h5>Upload your logo</h5>
+                        <p style={{color: '#516F90'}}>
+                            Voluntary but warmly recommended
+                        </p>
 
-                        <div class='custom-radio'>
-                            <input
-                                type='radio'
-                                id='color-2'
-                                name='color'
-                                value='color-2'
-                            />
-                            <label for='color-2'>
-                                <span>
-                                    <img
-                                        src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
-                                        alt='Checked Icon'
-                                    />
-                                </span>
+                        <div className='image-upload mb-4 mt-3'>
+                            <label htmlFor='file-input'>
+                                <img
+                                    src={
+                                        process.env.PUBLIC_URL +
+                                        'images/step3/imageUploader.png'
+                                    }
+                                    style={{pointerEvents: 'none'}}
+                                />
                             </label>
+                            <input
+                                id='file-input'
+                                type='file'
+                                style={{display: 'none'}}
+                            />
                         </div>
+                        <h5>Choose a color</h5>
+                        <div className='custom-radios mt-3'>
+                            <div className='custom-radio'>
+                                <input
+                                    type='radio'
+                                    id='color-1'
+                                    name='color'
+                                    value='color-1'
+                                    checked
+                                />
+                                <label htmlFor='color-1'>
+                                    <span>
+                                        <img
+                                            src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
+                                            alt='Checked Icon'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
 
-                        <div class='custom-radio'>
-                            <input
-                                type='radio'
-                                id='color-3'
-                                name='color'
-                                value='color-3'
-                            />
-                            <label for='color-3'>
-                                <span>
-                                    <img
-                                        src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
-                                        alt='Checked Icon'
-                                    />
-                                </span>
-                            </label>
-                        </div>
+                            <div className='custom-radio'>
+                                <input
+                                    type='radio'
+                                    id='color-2'
+                                    name='color'
+                                    value='color-2'
+                                />
+                                <label htmlFor='color-2'>
+                                    <span>
+                                        <img
+                                            src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
+                                            alt='Checked Icon'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
 
-                        <div class='custom-radio'>
-                            <input
-                                type='radio'
-                                id='color-4'
-                                name='color'
-                                value='color-4'
-                            />
-                            <label for='color-4'>
-                                <span>
-                                    <img
-                                        src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
-                                        alt='Checked Icon'
-                                    />
-                                </span>
-                            </label>
-                        </div>
-                        <div class='custom-radio'>
-                            <input
-                                type='radio'
-                                id='color-5'
-                                name='color'
-                                value='color-5'
-                            />
-                            <label for='color-5'>
-                                <span>
-                                    <img
-                                        src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
-                                        alt='Checked Icon'
-                                    />
-                                </span>
-                            </label>
+                            <div className='custom-radio'>
+                                <input
+                                    type='radio'
+                                    id='color-3'
+                                    name='color'
+                                    value='color-3'
+                                />
+                                <label htmlFor='color-3'>
+                                    <span>
+                                        <img
+                                            src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
+                                            alt='Checked Icon'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div className='custom-radio'>
+                                <input
+                                    type='radio'
+                                    id='color-4'
+                                    name='color'
+                                    value='color-4'
+                                />
+                                <label htmlFor='color-4'>
+                                    <span>
+                                        <img
+                                            src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
+                                            alt='Checked Icon'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
+                            <div className='custom-radio'>
+                                <input
+                                    type='radio'
+                                    id='color-5'
+                                    name='color'
+                                    value='color-5'
+                                />
+                                <label htmlFor='color-5'>
+                                    <span>
+                                        <img
+                                            src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg'
+                                            alt='Checked Icon'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
+                            <div className='custom-radio'>
+                                <input
+                                    type='color'
+                                    id='color-6'
+                                    name='color'
+                                    value='color-6'
+                                    style={{display: 'none'}}
+                                />
+                                <label htmlFor='color-6'>
+                                    <span>
+                                        <img
+                                            src={
+                                                process.env.PUBLIC_URL +
+                                                'images/step3/dotCheckbox.png'
+                                            }
+                                            alt='dotCheckbox'
+                                        />
+                                    </span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div
+                <HelpSectionComponent />
+                {/* <div
                     className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-5 help-section'
                     style={{height: '100%', width: 'auto'}}>
                     <div className='sectionCard1'>
@@ -205,7 +246,7 @@ const step3 = ({activeComponent}) => {
                                 <div
                                     className='custom-button-name'
                                     style={{color: 'black'}}>
-                                    <span style={{fontWeight: 500}}>
+                                    <span style={{fontWeight: 700}}>
                                         Book a new time
                                     </span>
                                 </div>
@@ -221,7 +262,11 @@ const step3 = ({activeComponent}) => {
                             </div>
                             <div
                                 className='row custom-button'
-                                style={{backgroundColor: 'white'}}>
+                                style={{
+                                    backgroundColor: 'white',
+                                    borderBottomLeftRadius: '10px',
+                                    borderBottomRightRadius: '10px',
+                                }}>
                                 <div className='custom-button-logo'>
                                     <img
                                         src={
@@ -234,7 +279,7 @@ const step3 = ({activeComponent}) => {
                                 <div
                                     className='custom-button-name'
                                     style={{color: 'black'}}>
-                                    <span style={{fontWeight: 500}}>
+                                    <span style={{fontWeight: 700}}>
                                         Cancel the meeting
                                     </span>
                                 </div>
@@ -250,11 +295,21 @@ const step3 = ({activeComponent}) => {
                             </div>
                             <div
                                 className='row custom-details mt-4'
-                                style={{backgroundColor: 'white'}}>
+                                style={{
+                                    backgroundColor: 'white',
+                                    borderTopLeftRadius: '10px',
+                                    borderTopRightRadius: '10px',
+                                    borderBottomLeftRadius: '10px',
+                                    borderBottomRightRadius: '10px',
+                                }}>
                                 <div
                                     className='custom-button-name'
                                     style={{color: 'black'}}>
-                                    <span style={{fontWeight: 500}}>
+                                    <span
+                                        style={{
+                                            fontWeight: 700,
+                                            fontSize: '14px',
+                                        }}>
                                         That's what our customers say about us
                                     </span>
                                 </div>
@@ -280,10 +335,10 @@ const step3 = ({activeComponent}) => {
                             alt='Frame22'
                         />
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className='row'>
-                <div class='card-footer'>
+                <div className='card-footer' style={{height: '10vh'}}>
                     <div className='row d-flex justify-content-center'>
                         <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2'>
                             <button

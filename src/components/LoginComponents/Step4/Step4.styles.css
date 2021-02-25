@@ -60,6 +60,7 @@
 @media only screen and (max-width: 600px) {
     .stepBackDesktop {
         display: none;
+        width: 90%;
     }
     .industry-item {
         text-align: center;
