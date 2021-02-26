@@ -5,9 +5,9 @@ import {mdiLessThan} from '@mdi/js';
 
 const HeaderBreadcrumbs = ({step}) => {
     return (
-        <div className='row' style={{height: '10vh'}}>
+        <div className='row'>
             <div
-                className='card-header info-color py-4 text-left'
+                className='card-header info-color py-4 text-left header-section'
                 style={{background: 'white'}}>
                 <div className='row card-header-info'>
                     <div className='col-7 col-sm-6 col-xl-auto d-flex align-items-center px-4'>
@@ -18,6 +18,7 @@ const HeaderBreadcrumbs = ({step}) => {
                                     className='btn btn-link stepBackMobile'
                                     style={{
                                         float: 'left',
+                                        paddingLeft: '0px',
                                     }}>
                                     <Icon
                                         path={mdiLessThan}
@@ -86,7 +87,9 @@ const HeaderBreadcrumbs = ({step}) => {
                             </div>
                         )}
                     </div>
-                    <div className='col-5 col-sm-6 col-xl-auto my-auto ovo px-3'>
+                    <div
+                        className='col-5 col-sm-6 col-xl-auto my-auto ovo px-3'
+                        style={{textAlign: 'right'}}>
                         <span style={{color: '#1A73E8', fontWeight: '700'}}>
                             {' '}
                             Step {step}{' '}

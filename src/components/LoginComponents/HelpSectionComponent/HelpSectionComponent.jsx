@@ -36,7 +36,7 @@ const HelpSectionComponent = () => {
                 style={{width: '100%'}}>
                 <div className='sectionCard1'>
                     <div
-                        className='col-12 col-12 mb-3 pt-3'
+                        className='col-12 col-12 mb-3 pt-4'
                         style={{
                             alignItems: 'center',
                             justifyContent: 'left',

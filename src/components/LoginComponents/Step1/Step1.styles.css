@@ -31,6 +31,6 @@ input[type='text'] {
     } */
     .step1-container {
         height: 100vh;
-        padding: 80px;
+        /* padding: 80px; */
     }
 }

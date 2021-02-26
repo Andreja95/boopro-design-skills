@@ -5,10 +5,12 @@ const step1 = ({activeComponent}) => {
     return (
         <div className='container'>
             <div
-                className='row align-items-center step1-container'
+                className='row align-items-center d-flex justify-content-center step1-container'
                 style={{color: 'black'}}
                 style={{height: '100vh'}}>
-                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+                <div
+                    className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5'
+                    style={{color: 'black'}}>
                     <form className='border border-light step1' action='#!'>
                         <div
                             className='logoo mb-3'
@@ -85,7 +87,9 @@ const step1 = ({activeComponent}) => {
                         </div>
                     </form>
                 </div>
-                <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 align-items-center additionally-desc'>
+                <div
+                    className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 align-items-center additionally-desc'
+                    style={{color: 'black'}}>
                     <div className='additionally-desc-content px-3'>
                         <div className='col-auto d-flex justify-content-center'>
                             <img

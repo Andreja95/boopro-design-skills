@@ -20,6 +20,7 @@ const HelpSectionComponent = () => {
                     style={{
                         float: 'left',
                         height: '100%',
+                        paddingLeft: '5px',
                     }}>
                     <Icon
                         path={mdiLessThan}

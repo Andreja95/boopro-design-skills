@@ -8,7 +8,7 @@ const step3 = ({activeComponent}) => {
         <div className='card' style={{height: '100vh'}}>
             <HeaderBreadcrumbs step={1} />
             <div
-                className='row card-body card-body-step3 px-lg-5 mt-0 px-0 pt-5 justify-content-center'
+                className='row card-body card-body-step3 px-lg-5 px-0 justify-content-center'
                 style={{height: '80vh'}}>
                 <a
                     href=''
@@ -44,7 +44,7 @@ const step3 = ({activeComponent}) => {
                     </div>
                 </a>
                 <div
-                    className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-5 mx-5 customize-look'
+                    className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-5 mx-0 customize-look'
                     style={{height: '100%'}}>
                     <div>
                         <h3
@@ -183,159 +183,6 @@ const step3 = ({activeComponent}) => {
                     </div>
                 </div>
                 <HelpSectionComponent />
-                {/* <div
-                    className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-5 help-section'
-                    style={{height: '100%', width: 'auto'}}>
-                    <div className='sectionCard1'>
-                        <div
-                            className='logoo mb-3'
-                            style={{
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}>
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    'images/step3/mainLogo.png'
-                                }
-                                alt='mainLogo'
-                            />
-                            <span
-                                style={{
-                                    fontWeight: 600,
-                                    margin: '0px',
-                                    paddingLeft: '5px',
-                                    fontSize: '25px',
-                                }}>
-                                {' '}
-                                bookybook
-                            </span>
-                        </div>
-                        <h4 className='hello' style={{color: 'white'}}>
-                            <span>Hej! </span>
-                            <Icon
-                                path={mdiHandLeft}
-                                title='Back'
-                                // size={2}
-                                color='white'
-                                style={{
-                                    height: '35px',
-                                    width: '35px',
-                                    marginBottom: '10px',
-                                }}
-                            />
-                        </h4>
-                        <div className='help'>
-                            <p>What do you want help with?</p>
-                            <div
-                                className='row custom-button'
-                                style={{
-                                    backgroundColor: 'white',
-                                    borderTopLeftRadius: '10px',
-                                    borderTopRightRadius: '10px',
-                                }}>
-                                <div className='custom-button-logo'>
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            'images/step3/Frame.png'
-                                        }
-                                        alt='Frame'
-                                    />
-                                </div>
-                                <div
-                                    className='custom-button-name'
-                                    style={{color: 'black'}}>
-                                    <span style={{fontWeight: 700}}>
-                                        Book a new time
-                                    </span>
-                                </div>
-                                <div className='custom-button-arrow'>
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            'images/step3/Vector.png'
-                                        }
-                                        alt='Vector'
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                className='row custom-button'
-                                style={{
-                                    backgroundColor: 'white',
-                                    borderBottomLeftRadius: '10px',
-                                    borderBottomRightRadius: '10px',
-                                }}>
-                                <div className='custom-button-logo'>
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            'images/step3/Frame2.png'
-                                        }
-                                        alt='Frame2'
-                                    />
-                                </div>
-                                <div
-                                    className='custom-button-name'
-                                    style={{color: 'black'}}>
-                                    <span style={{fontWeight: 700}}>
-                                        Cancel the meeting
-                                    </span>
-                                </div>
-                                <div className='custom-button-arrow'>
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            'images/step3/Vector.png'
-                                        }
-                                        alt='Vector'
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                className='row custom-details mt-4'
-                                style={{
-                                    backgroundColor: 'white',
-                                    borderTopLeftRadius: '10px',
-                                    borderTopRightRadius: '10px',
-                                    borderBottomLeftRadius: '10px',
-                                    borderBottomRightRadius: '10px',
-                                }}>
-                                <div
-                                    className='custom-button-name'
-                                    style={{color: 'black'}}>
-                                    <span
-                                        style={{
-                                            fontWeight: 700,
-                                            fontSize: '14px',
-                                        }}>
-                                        That's what our customers say about us
-                                    </span>
-                                </div>
-                                <div className='custom-button-arrow'>
-                                    <img
-                                        src={
-                                            process.env.PUBLIC_URL +
-                                            'images/step3/Vector2.png'
-                                        }
-                                        alt='Vector2'
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='sectionCard2'></div>
-                    <div className='sectionCard3'>
-                        <img
-                            src={
-                                process.env.PUBLIC_URL +
-                                'images/step3/Frame22.png'
-                            }
-                            alt='Frame22'
-                        />
-                    </div>
-                </div> */}
             </div>
             <div className='row'>
                 <div className='card-footer' style={{height: '10vh'}}>

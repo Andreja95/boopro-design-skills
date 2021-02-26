@@ -9,7 +9,7 @@ const step4 = ({activeComponent}) => {
 
             <div className='card-body card-body-step4 px-lg-5 pt-0'>
                 <div className='row d-flex justify-content-center'>
-                    <div className='col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6'>
+                    <div className='col-12 col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-6'>
                         <h4 className='mb-4 mt-4' style={{fontWeight: 700}}>
                             Account information
                         </h4>
@@ -32,7 +32,7 @@ const step4 = ({activeComponent}) => {
 
                                 <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 md-form'>
                                     <label htmlFor='materialLoginFormPassword'>
-                                        LastName
+                                        Last Name
                                     </label>
                                     <input
                                         type='text'
@@ -75,7 +75,7 @@ const step4 = ({activeComponent}) => {
                                     Choose a branch
                                 </h6>
                                 <div className='industry row'>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -86,7 +86,7 @@ const step4 = ({activeComponent}) => {
                                         <p>Hairdresser</p>
                                     </div>
 
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -96,7 +96,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Nails</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -106,7 +106,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Massage</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -116,7 +116,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Eyebrows & eyelashes</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -126,7 +126,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Barbershop</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -136,7 +136,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Makeup</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -146,7 +146,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Skin-care</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -156,7 +156,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Training</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -166,7 +166,7 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Depilation</p>
                                     </div>
-                                    <div className='industry-item'>
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
                                         <img
                                             src={
                                                 process.env.PUBLIC_URL +
@@ -176,15 +176,42 @@ const step4 = ({activeComponent}) => {
                                         />
                                         <p>Tattooing-and-piercing</p>
                                     </div>
-                                    <div className='industry-item'>
-                                        <img
-                                            src={
-                                                process.env.PUBLIC_URL +
-                                                'images/step4/other.png'
-                                            }
-                                            alt='other'
+                                    <div className='col-4 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3 industry-item'>
+                                        {/* <div
+                                            className='dot'
+                                            style={{display: 'none'}}></div> */}
+                                        <input
+                                            type='radio'
+                                            id='color-6'
+                                            name='color'
+                                            value='color-6'
+                                            style={{display: 'none'}}
                                         />
-                                        <p>Other</p>
+                                        <label
+                                            htmlFor='color-6'
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                margin: '0px',
+                                            }}>
+                                            <span>
+                                                <img
+                                                    src={
+                                                        process.env.PUBLIC_URL +
+                                                        'images/step3/dotCheckbox.png'
+                                                    }
+                                                    alt='dotCheckbox'
+                                                />
+                                            </span>
+                                            <img
+                                                src={
+                                                    process.env.PUBLIC_URL +
+                                                    'images/step4/other.png'
+                                                }
+                                                alt='other'
+                                            />
+                                            <p>Other</p>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

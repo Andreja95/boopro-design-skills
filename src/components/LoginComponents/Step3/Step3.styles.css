@@ -161,6 +161,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .card-body-step3 {
+        padding-top: 0px;
+    }
     /* .sectionCard1 {
         background: #05848b;
         margin: 0px !important;
@@ -253,7 +256,7 @@
     .card-body-step3 {
         /* margin-right: 80px;
         margin-left: 80px; */
-        margin-top: 60px;
+        padding-top: 60px;
     }
     .preview {
         display: none;
