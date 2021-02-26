@@ -5,15 +5,11 @@ const step1 = ({activeComponent}) => {
     return (
         <div className='container'>
             <div
-                className='row align-items-center d-flex justify-content-center step1-container'
-                style={{color: 'black'}}
-                style={{height: '100vh'}}>
-                <div
-                    className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5'
-                    style={{color: 'black'}}>
+                className='row align-items-center justify-content-center'
+                style={{height: '100vh', color: 'black'}}>
+                <div className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5'>
                     <form className='border border-light step1' action='#!'>
                         <div
-                            className='logoo mb-3'
                             style={{
                                 display: 'flex',
                                 alignItems: 'center',
@@ -88,28 +84,26 @@ const step1 = ({activeComponent}) => {
                     </form>
                 </div>
                 <div
-                    className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 align-items-center additionally-desc'
+                    className='col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 additionally-desc'
                     style={{color: 'black'}}>
-                    <div className='additionally-desc-content px-3'>
-                        <div className='col-auto d-flex justify-content-center'>
-                            <img
-                                src={
-                                    process.env.PUBLIC_URL +
-                                    'images/step1/background.png'
-                                }
-                                alt=''
-                            />
-                        </div>
-                        <div className='col-12 mt-4 px-5 text-center'>
-                            <h4 className='font-weight-bold mb-3'>
-                                Everything came together in one place
-                            </h4>
-                            <p>
-                                Make it easy for your customers, focus on what
-                                you're good at and increase your profitability
-                                with Bookibook
-                            </p>
-                        </div>
+                    <div className='d-flex justify-content-center'>
+                        <img
+                            src={
+                                process.env.PUBLIC_URL +
+                                'images/step1/background.png'
+                            }
+                            alt=''
+                        />
+                    </div>
+                    <div className='col-12 mt-4 px-5 text-center'>
+                        <h4 className='font-weight-bold mb-3'>
+                            Everything came together in one place
+                        </h4>
+                        <p>
+                            Make it easy for your customers, focus on what
+                            you're good at and increase your profitability with
+                            Bookibook
+                        </p>
                     </div>
                 </div>
             </div>

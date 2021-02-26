@@ -10,7 +10,6 @@ const step2 = ({activeComponent}) => {
                     style={{color: 'black'}}>
                     <div>
                         <div
-                            className='logoo mb-3'
                             style={{
                                 display: 'flex',
                                 alignItems: 'center',

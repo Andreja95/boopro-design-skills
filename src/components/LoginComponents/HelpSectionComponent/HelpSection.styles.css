@@ -1,17 +1,36 @@
+.sectionCard2 {
+    height: 271px;
+    background-color: #f5f5f5;
+    -moz-box-shadow: 3px 3px 6px -6px #000000;
+    -webkit-box-shadow: 3px 3px 6px -6px #000000;
+    box-shadow: 3px 3px 6px -6px #000000;
+}
+.sectionCard3 {
+    text-align: center;
+    -moz-box-shadow: 3px 3px 6px -6px #000000;
+    -webkit-box-shadow: 3px 3px 6px -6px #000000;
+    box-shadow: 3px 3px 6px -6px #000000;
+}
+
 @media only screen and (max-width: 600px) {
     .help-section {
         display: none;
     }
+    .sectionCard3 {
+        margin: 0px !important;
+    }
+    .sectionCard2 {
+        margin: 0px !important;
+        width: 100%;
+    }
 }
-@media only screen and (min-width: 600px) {
-    /* .help-section {
-        width: auto;
-    } */
 
-    /* .v-line {
-        display: none;
-    } */
-    .backSetup {
-        display: none;
+@media only screen and (min-width: 600px) {
+    .sectionCard1 {
+        height: 271px;
+        color: white;
+        background: #1a6cd9;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 }

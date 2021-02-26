@@ -6,19 +6,15 @@ import './HelpSection2.styles.css';
 
 const HelpSectionComponent = () => {
     return (
-        <div
-            className='col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mx-0'
-            style={{height: '100%'}}>
+        <div className='col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
             <div
                 className='col-12 my-0 backSetup'
                 style={{
                     height: '5vh',
-                    alignItems: 'center',
                 }}>
                 <button
                     className='btn btn-link stepBackMobile'
                     style={{
-                        float: 'left',
                         height: '100%',
                         paddingLeft: '5px',
                     }}>
@@ -36,16 +32,14 @@ const HelpSectionComponent = () => {
             </div>
             <div
                 className='col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-12 mx-auto help-section2'
-                style={{width: '100%', height: '95vh'}}>
-                <div className='sectionCard11'>
+                style={{height: '95vh'}}>
+                <div className='sectionCardFirst'>
                     <div
                         className='col-12 col-12 mb-3'
                         style={{
                             alignItems: 'center',
-                            justifyContent: 'left',
                             display: 'flex',
                             paddingLeft: '40px',
-                            textAlign: 'left',
                             paddingTop: '40px',
                         }}>
                         <img
@@ -93,36 +87,6 @@ const HelpSectionComponent = () => {
 
                     <div className='help mb-3'>
                         <p>What do you want help with?</p>
-                        {/* <div
-                            className='row custom-details mt-4'
-                            style={{
-                                backgroundColor: 'white',
-                                borderTopLeftRadius: '10px',
-                                borderTopRightRadius: '10px',
-                                borderBottomLeftRadius: '10px',
-                                borderBottomRightRadius: '10px',
-                            }}>
-                            <div
-                                className='custom-button-name'
-                                style={{color: 'black'}}>
-                                <span
-                                    style={{
-                                        fontWeight: 700,
-                                        fontSize: '14px',
-                                    }}>
-                                    That's what our customers say about us
-                                </span>
-                            </div>
-                            <div className='custom-button-arrow'>
-                                <img
-                                    src={
-                                        process.env.PUBLIC_URL +
-                                        'images/step3/Vector2.png'
-                                    }
-                                    alt='Vector2'
-                                />
-                            </div>
-                        </div> */}
                     </div>
                     <div
                         className='row mx-auto'
@@ -134,7 +98,6 @@ const HelpSectionComponent = () => {
                             height: '70px',
                             alignItems: 'center',
                             position: 'relative',
-                            zIndex: 1,
                             marginTop: '15%',
                         }}>
                         <div className='col-3' style={{textAlign: 'center'}}>
@@ -244,8 +207,8 @@ const HelpSectionComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sectionCard22'></div>
-                <div className='sectionCard33'>
+                <div className='sectionCardSecond'></div>
+                <div className='sectionCardThird'>
                     <div
                         className='col-12 h-100'
                         style={{

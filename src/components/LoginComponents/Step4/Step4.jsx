@@ -7,8 +7,8 @@ const step4 = ({activeComponent}) => {
         <div className='card' style={{height: '100vh'}}>
             <HeaderBreadcrumbs step={2} />
 
-            <div className='card-body card-body-step4 px-lg-5 pt-0'>
-                <div className='row d-flex justify-content-center'>
+            <div className='card-body card-body-step4'>
+                <div className='row justify-content-center'>
                     <div className='col-12 col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-6'>
                         <h4 className='mb-4 mt-4' style={{fontWeight: 700}}>
                             Account information
@@ -220,7 +220,7 @@ const step4 = ({activeComponent}) => {
                 </div>
             </div>
             <div className='card-footer'>
-                <div className='row d-flex justify-content-center'>
+                <div className='row justify-content-center'>
                     <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2'>
                         <button
                             className='btn btn-light btn-block my-4 waves-effect z-depth-0 stepBackDesktop'
@@ -230,7 +230,7 @@ const step4 = ({activeComponent}) => {
                     </div>
                     <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2'>
                         <button
-                            className='btn btn-primary btn-block my-4 waves-effect z-depth-0'
+                            className='btn btn-primary btn-block card-footer-button my-4 waves-effect z-depth-0'
                             type='submit'
                             onClick={(event) =>
                                 activeComponent(event, 'step4')

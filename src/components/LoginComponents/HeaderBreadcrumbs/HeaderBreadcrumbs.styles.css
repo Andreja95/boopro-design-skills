@@ -6,14 +6,13 @@
     display: inline-block;
     margin-right: 5px;
 }
+
 .dotActive {
     background-color: #1a73e8;
 }
+
 @media only screen and (min-width: 600px) {
-    .header-section {
+    .card-header {
         border-bottom: none;
     }
 }
-/* @media only screen and (max-width: 600px) {
-   
-} */

@@ -5,7 +5,7 @@ import HelpSectionComponent from '../HelpSectionComponent/HelpSectionComponent';
 
 const step3 = ({activeComponent}) => {
     return (
-        <div className='card' style={{height: '100vh'}}>
+        <div className='card'>
             <HeaderBreadcrumbs step={1} />
             <div
                 className='row card-body card-body-step3 px-lg-5 px-0 justify-content-center'
@@ -185,11 +185,11 @@ const step3 = ({activeComponent}) => {
                 <HelpSectionComponent />
             </div>
             <div className='row'>
-                <div className='card-footer' style={{height: '10vh'}}>
+                <div className='card-footer'>
                     <div className='row d-flex justify-content-center'>
                         <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2'>
                             <button
-                                className='btn btn-primary btn-block my-4 waves-effect z-depth-0'
+                                className='btn btn-primary btn-block card-footer-button my-4 waves-effect z-depth-0'
                                 type='submit'
                                 onClick={(event) =>
                                     activeComponent(event, 'step4')

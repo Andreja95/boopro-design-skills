@@ -15,30 +15,26 @@ const Login = () => {
 
     return (
         <div className='container-fluid mx-0 px-0'>
-            <div>
-                {(currentStep === 'step1' && (
-                    <Step1 activeComponent={handleCurrentStep} />
+            {(currentStep === 'step1' && (
+                <Step1 activeComponent={handleCurrentStep} />
+            )) ||
+                (currentStep === 'step2' && (
+                    <Step2 activeComponent={handleCurrentStep} />
                 )) ||
-                    (currentStep === 'step2' && (
-                        <Step2 activeComponent={handleCurrentStep} />
-                    )) ||
-                    (currentStep === 'step3' && (
-                        <Step3 activeComponent={handleCurrentStep} />
-                    )) ||
-                    (currentStep === 'step4' && (
-                        <Step4 activeComponent={handleCurrentStep} />
-                    )) ||
-                    (currentStep === 'helpSectionComponent' && (
-                        <HelpSectionComponent
-                            activeComponent={handleCurrentStep}
-                        />
-                    )) ||
-                    (currentStep === 'helpSectionComponent2' && (
-                        <HelpSectionComponent2
-                            activeComponent={handleCurrentStep}
-                        />
-                    ))}
-            </div>
+                (currentStep === 'step3' && (
+                    <Step3 activeComponent={handleCurrentStep} />
+                )) ||
+                (currentStep === 'step4' && (
+                    <Step4 activeComponent={handleCurrentStep} />
+                )) ||
+                (currentStep === 'helpSectionComponent' && (
+                    <HelpSectionComponent activeComponent={handleCurrentStep} />
+                )) ||
+                (currentStep === 'helpSectionComponent2' && (
+                    <HelpSectionComponent2
+                        activeComponent={handleCurrentStep}
+                    />
+                ))}
         </div>
     );
 };
